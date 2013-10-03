@@ -16,11 +16,14 @@ Gem::Specification.new do |s|
   s.files        = Dir.glob("lib/**/*") + %w(README.md LICENSE)
   s.require_path = 'lib'
 
-  s.add_development_dependency 'bundler'
   s.add_development_dependency 'actionpack'
   s.add_development_dependency 'activesupport'
-  s.add_development_dependency 'test-unit', '~> 2.5.1'
-  s.add_development_dependency 'shoulda',   '~> 2.11.3'
-  s.add_development_dependency 'rack',      '~> 1.2.0'
-  s.add_development_dependency 'rack-test', '~> 0.5.4'
+  s.add_development_dependency 'bundler'
+  s.add_development_dependency 'guard'
+  s.add_development_dependency 'guard-test'
+  s.add_development_dependency 'rack'
+  s.add_development_dependency 'rack-test'
+  s.add_development_dependency 'shoulda'
+  s.add_development_dependency 'test-unit'
+
 end
